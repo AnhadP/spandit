@@ -23,6 +23,7 @@ export default function App() {
     "Startup",
     "Sad",
     "Sexy",
+    "Sanskari",
   ];
 
   const getRandomSFor = () => {
@@ -42,7 +43,10 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container} backgroundColor={BGColor}>
       <View>
-        <Text style={styles.textView}>{`${currentSFor}Pandit`}</Text>
+        <Text style={styles.textView}>
+          <Text style={{ fontWeight: "bold" }}>{currentSFor}</Text>
+          Pandit
+        </Text>
       </View>
       <TouchableOpacity
         style={styles.button}
@@ -70,7 +74,6 @@ const styles = StyleSheet.create({
     color: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
-    fontWeight: "bold",
     fontSize: 40,
   },
   button: {
@@ -80,17 +83,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     borderColor: "#000000",
     position: "absolute",
-    bottom: 40,
+    bottom: 0,
     width: "100%",
-    height: 65,
+    height: 100,
   },
   buttonText: {
     color: "#000000",
     textAlign: "center",
     justifyContent: "center",
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: "bold",
-    paddingLeft: 10,
-    paddingRight: 10,
+    padding: 25,
   },
 });
