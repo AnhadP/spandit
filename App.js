@@ -40,7 +40,7 @@ export default function App() {
   const [BGColor, setBGcolor] = useState(getRandomBGColor());
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView style={styles.container} backgroundColor={BGColor}>
       <View>
         <Text style={styles.textView}>{`${currentSFor}Pandit`}</Text>
       </View>
@@ -63,11 +63,15 @@ const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "red",
+    height: "100%",
   },
   textView: {
     color: "#FFFFFF",
+    alignItems: "center",
+    justifyContent: "center",
     fontWeight: "bold",
-    fontSize: 35,
+    fontSize: 40,
   },
   button: {
     marginTop: 10,
@@ -75,11 +79,10 @@ const styles = StyleSheet.create({
     paddingBottom: 10,
     backgroundColor: "#FFFFFF",
     borderColor: "#000000",
-    bottom: 0,
+    position: "absolute",
+    bottom: 40,
     width: "100%",
     height: 65,
-    position: "absolute",
-    bottom: 0,
   },
   buttonText: {
     color: "#000000",
