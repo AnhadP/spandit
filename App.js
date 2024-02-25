@@ -11,7 +11,6 @@ import {
 
 export default function App() {
   const sfors = [
-    "Sex",
     "Sic",
     "Stupid",
     "Sunday",
@@ -24,6 +23,7 @@ export default function App() {
     "Sad",
     "Sexy",
     "Sanskari",
+    "Secret",
   ];
 
   const getRandomSFor = () => {
